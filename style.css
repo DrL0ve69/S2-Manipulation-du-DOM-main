@@ -24,7 +24,7 @@ button {
     display : block;
     margin : 1em;
 }
-
+button:active { background-color: #873815; }
 footer {
     position: relative;
     margin-top: 5em;
@@ -75,4 +75,3 @@ table.bandes tbody tr:nth-child(even), tfoot {
 .poids::after{
     content: " lbs";
 }
-
