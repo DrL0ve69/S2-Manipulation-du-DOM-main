@@ -1,7 +1,7 @@
 const panier = {
-    pommes : 2,
-    poires : 5,
-    prunes : 7
+    pommes : 0,
+    poires : 0,
+    prunes : 0
 }
 // Pour afficher le nombre de pommes dans la facture détaillée
 let qtePommes = panier.pommes.toString();
