@@ -1,0 +1,9 @@
+form { border: 3px solid black; border-radius: 5%; padding: 1rem; }
+div { padding: 0.5rem; }
+
+h1 { text-align: center; text-decoration: 2px dotted underline black; }
+
+.list_box, .text_box, .check_box { border: 1px dashed gray; margin-bottom: 1rem; }
+
+.envoie_formulaire { display: flex; align-items: center; justify-content: center; }
+.envoie_formulaire > * { font-size: 2rem;}

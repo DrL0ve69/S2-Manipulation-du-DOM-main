@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form name="commande_outils" action="mailto:philippecharron1990@gmail.com" method="post" enctype="text/plain">
+        <h1>Formulaire commande de quincaillerie</h1>
+        <div id="liste_outils" class="list_box">
+
+            <h2>Choisissez les outils à commander :</h2>
+
+            <label>
+                <select name="outils" size="5" multiple="multiple">
+                    <option value="marteau">Marteau</option>
+                    <option value="cle_anglaise">Clé anglaise</option>
+                    <option value="masse">Masse</option>
+                    <option value="pince">Pince</option>
+                    <option value="tournevis">Tournevis</option>
+                </select>
+            </label>
+
+        </div>
+
+        <div id="informations" class="text_box">
+
+            <h2>Entrez vos informations concernant la facturation :</h2>
+            <p>
+                Nom : <br>
+                <label>
+
+                    <input type="text" name="nom" size="40" maxlength="40"><br>
+                </label>
+                Adresse : <br>
+                <label>
+
+                    <textarea name="adresse" cols="30" rows="5" ></textarea>
+
+                </label>
+
+            </p>
+
+        </div>
+
+        <div id="adresse_livraison" class="check_box">
+
+            <h2>Entrez l'adresse de livraison :</h2>
+
+            <p>
+                Utiliser la même adresse que ci-dessus ?
+                <label>
+                    <input type="checkbox" name="facturation_meme" value="oui" checked="checked"><br>
+                </label><br>
+                OU
+            </p>
+            <div class="autre_adresse">
+
+                <h2>Entrez vos informations concernant la livraison :</h2>
+                <p>
+                    Nom : <br>
+                    <label>
+
+                        <input type="text" name="nom" size="40" maxlength="40"><br>
+                    </label>
+                    Adresse : <br>
+                    <label>
+
+                        <textarea name="adresse" cols="30" rows="5" ></textarea>
+
+                    </label>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="envoie_formulaire">
+
+            <input type="submit" name="envoie_formulaire" value="Envoyer"
+                   onclick="alert(`Vous avez envoyé vôtre commande d'outils : ${outils.value}`)">
+
+        </div>
+
+    </form>
+
+
+</body>
+</html>
